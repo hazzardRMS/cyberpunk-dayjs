@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./dist/bundle.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/index.css">
+    <title>Sua idade em Cyberpunk 2077</title>
+</head>
+<body>
+ <div class="global-container">
+    <h1 class="main-title">Cyberpunk 2077</h1>
+    <h2 class="main-subtitle">Manipulação de datas utilizando <b>dayjs()</b></h2>
+    <div class="form-date">
+        <h3 class="section-title">Insira sua data de nascimento</h3>
+        <div class="inputs-container">
+           <div class="box-day"> <!--dia-->
+            <label for="day">Dia</label>
+            <input type="text" id="day" name="day" maxlength="2" minlength="2" min="1" max="31" placeholder="DD" required>
+           </div>
+           <div class="box-month"><!--mês-->
+            <label for="month">Mês</label>
+            <input type="text" id="month" name="month" maxlength="2" minlength="2" min="1" max="12" placeholder="MM" required >
+           </div>
+            <div class="box-year"><!--ano-->
+                <label for="year">Ano</label>
+                <input type="text" id="year" name="year" maxlength="4" minlength="4" min="1900" max="2018" required placeholder="AAAA">
+            </div>
+        </div>
+        <div class="box-btn" id="submit-btn">
+            <!-- <button type="button">Conferir idade</button> -->
+            <p class="btn-text">Conferir idade</p>
+            <img src="../assets/img/arrow.gif" class="arrow">
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+          <span class="close">X</span>
+          <p id="contentOfModal"></p>
+        </div>
+      </div>
+    <div class="footer">
+        <p class="assign">By : <b>HazzardRMS</b></p>
+    </div>
+
+    
+
+</div>  
+</body>
+</html>
